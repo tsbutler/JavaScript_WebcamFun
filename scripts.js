@@ -28,8 +28,13 @@ function paintToCanvas() {
 }
 
 function takePhoto() {
+  // Played the sound
   snap.currentTime = 0;
   snap.play();
+
+  // Take the data out of the canvas
+  const data = canvas.toDataURL('image/jpeg');
+  console.log(data);
 }
 
 getVideo();
