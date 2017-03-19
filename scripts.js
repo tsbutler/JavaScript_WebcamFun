@@ -39,7 +39,7 @@ function takePhoto() {
   link.setAttribute('download', 'handsome');
   link.innerHTML = `<img src="${data}" alt="Handsome Man" />`;
   link.textContent = 'Download image';
-  strip.insertBefore(link, strip.firstChild);
+  strip.insertBefore(link, strip.firsChild);
 }
 
 getVideo();
